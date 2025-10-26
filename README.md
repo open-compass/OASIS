@@ -6,7 +6,7 @@ OASIS is a comprehensive evaluation framework designed to assess the safety and 
 
 ## Key Features
 
-- **Multi-Model Support**: Compatible with various AI models including GPT-4, Claude, Qwen, and others
+- **Multi-Model Support**: Compatible with various AI models including GPT5, Qwen, and others
 - **Comprehensive Safety Assessment**: Evaluates agent behavior across multiple safety dimensions
 - **Configurable Test Parameters**: Flexible test levels (L0-L3), difficulties (Low/Medium/High), and test counts
 - **Real-World Tool Integration**: Tests agents with realistic tool-calling scenarios
