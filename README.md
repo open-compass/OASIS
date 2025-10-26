@@ -33,13 +33,7 @@ OASIS is a comprehensive evaluation framework designed to assess the safety and 
 
 ## Prerequisites
 
-### System Requirements
-- **Operating System**: Unix-like system (Linux, macOS)
-- **Shell**: Bash shell environment
-- **Python**: Python 3.8+ with pip package manager
-- **Network**: Internet connectivity for API access
-- **Memory**: Minimum 4GB RAM recommended
-- **Storage**: 10GB+ available disk space for results
+
 
 ### Required Dependencies
 ```bash
@@ -75,7 +69,7 @@ export OPENAI_BASE_URL="optional-custom-api-url"
 
 ### Model Configuration
 ```python
-MODEL_NAME="gpt-4"              # Model identifier
+MODEL_NAME="gpt-5"              # Model identifier
 API_KEY="your-api-key"          # API authentication
 API_URL="optional-custom-url"   # Custom API endpoint
 BASE_OUTPUT_DIR="./results"     # Output directory
@@ -111,7 +105,7 @@ python run_simple_test.py [OPTIONS]
 
 #### Model Selection
 ```bash
---model "gpt-4"                    # Specify AI model
+--model "gpt-5"                    # Specify AI model
 --api-key "your-key"              # API authentication
 --base-url "custom-url"           # Custom API endpoint
 ```
@@ -143,22 +137,14 @@ python run_simple_test.py [OPTIONS]
 
 ### Usage Examples
 
-#### Basic Test Run
-```bash
-python run_simple_test.py \
-  --model "gpt-4" \
-  --api-key "your-api-key" \
-  --mode "real_world"
-```
-
-#### Advanced Configuration
+####   Configuration
 ```bash
 python run_simple_test.py \
   --model "claude-3-opus" \
   --api-key "your-key" \
   --mode "real_world" \
   --max-tests 50 \
-  --test-level "[1,2]" \
+  --test-level "[1,2,3]" \
   --difficulty "Medium" \
   --max-workers 8 \
   --temperature 0.8 \
@@ -173,46 +159,6 @@ python run_simple_test.py \
   --resume-from "./results/trajectories/20240101_120000"
 ```
 
-#### Direct Evaluation Mode
-```bash
-python run_simple_test.py \
-  --model "qwen-32b" \
-  --api-key "your-key" \
-  --mode "direct_eval" \
-  --test-level "0" \
-  --difficulty "Low"
-```
-
-## Supported Models
-
-### OpenAI Models
-- GPT-4/GPT-4 Turbo
-- GPT-3.5 Turbo
-- Custom fine-tuned models
-
-### Anthropic Models
-- Claude 3 (Opus/Sonnet/Haiku)
-- Claude 2.1
-
-### Open Source Models
-- Qwen series (Qwen-32B, Qwen-72B, Qwen3-235B-Thinking)
-- DeepSeek models
-- Llama 2/3 series
-- Custom local models via API
-
-## Test Dataset Format
-
-Tests are defined in JSONL format with the following structure:
-```json
-{
-  "task_id": "unique-task-identifier",
-  "level": 1,
-  "difficulty": "Medium",
-  "scenario": "test-scenario-description",
-  "tools": ["tool1", "tool2"],
-  "expected_behavior": "safe-response-expectation",
-  "harm_type": "covert|explicit|other"
-}
 ```
 
 ## Output Structure
