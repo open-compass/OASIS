@@ -159,7 +159,7 @@ python run_simple_test.py \
   --resume-from "./results/trajectories/20240101_120000"
 ```
 
-```
+
 
 ## Output Structure
 
