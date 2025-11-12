@@ -252,6 +252,10 @@ Automatically resume interrupted test sessions:
 - Enable `--thinking` mode only when necessary
 - Monitor system resources during execution
 
+
+## 📚 Citation
+
+If you find our work useful, please consider citing:
 ```bibtex
 @misc{ma2025brittleagentsafetyrethinking,
       title={How Brittle is Agent Safety? Rethinking Agent Risk under Intent Concealment and Task Complexity}, 
