@@ -251,3 +251,14 @@ Automatically resume interrupted test sessions:
 - Configure `--temperature` based on test requirements
 - Enable `--thinking` mode only when necessary
 - Monitor system resources during execution
+
+```bibtex
+@misc{ma2025brittleagentsafetyrethinking,
+      title={How Brittle is Agent Safety? Rethinking Agent Risk under Intent Concealment and Task Complexity}, 
+      author={Zihan Ma and Dongsheng Zhu and Shudong Liu and Taolin Zhang and Junnan Liu and Qingqiu Li and Minnan Luo and Songyang Zhang and Kai Chen},
+      year={2025},
+      eprint={2511.08487},
+      archivePrefix={arXiv},
+      primaryClass={cs.MA},
+      url={https://arxiv.org/abs/2511.08487}, 
+}
